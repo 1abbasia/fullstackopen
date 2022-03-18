@@ -8,6 +8,27 @@ const Header = (props) => {
   )
 }
 
+const ButtonDisplay = (props) => {
+  return (
+    <div>
+      <button>good</button>
+      <button>neutral</button>
+      <button>bad</button>
+    </div>
+  )
+}
+
+const StatDisplay = (props) => {
+  return (
+    <div>
+      <h1>Statistics</h1>
+      <div>good:</div>
+      <div>neutral:</div>
+      <div>bad:</div>
+    </div>
+  )
+}
+
 const App = () => {
   // save clicks of each button to its own state
   const [good, setGood] = useState(0)
@@ -17,6 +38,8 @@ const App = () => {
   return (
     <div>
       <Header/>
+      <ButtonDisplay/>
+      <StatDisplay/>
     </div>
   )
 }
