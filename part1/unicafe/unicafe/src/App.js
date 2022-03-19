@@ -20,6 +20,7 @@ const ButtonDisplay = (props) => {
 
 
 const StatDisplay = (props) => {
+  //logic for stats section
   return (
     <div>
       <h1>Statistics</h1>
@@ -36,6 +37,7 @@ const App = () => {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
+  //create on click event for  button. It increments out good variable count by 1 using hooks on line 36-38
   const handleGoodCounter = () => {setGood(good +1)};
 
   const handleNeutralCounter = () => {setNeutral(neutral +1)};
