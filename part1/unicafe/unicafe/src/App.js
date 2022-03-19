@@ -27,7 +27,7 @@ const StatDisplay = (props) => {
       <div>goooood:{props.goodCount}</div>
       <div>neutral:{props.neutralCount}</div>
       <div>bad:{props.badCount}</div>
-      <div>all:{props.allCount}</div>
+      <div>all:{props.all}</div>
       <div>average score:{props.avg}</div>
       <div>Positive percentage:{props.posPercent}</div>
     </div>
@@ -56,6 +56,7 @@ const App = () => {
   
   const pos = (good/allCount)*100;
   console.log(avgValues);
+  console.log(allCount);
   
 
   
