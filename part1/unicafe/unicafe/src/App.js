@@ -11,18 +11,19 @@ const Header = (props) => {
 const ButtonDisplay = (props) => {
   return (
     <div>
-      <button>good</button>
+      <button onClick={props.handleGoodCounter}>good</button>
       <button>neutral</button>
       <button>bad</button>
     </div>
   )
 }
 
+
 const StatDisplay = (props) => {
   return (
     <div>
       <h1>Statistics</h1>
-      <div>good:</div>
+      <div>goooood:{props.goodCount}</div>
       <div>neutral:</div>
       <div>bad:</div>
     </div>
@@ -35,11 +36,15 @@ const App = () => {
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
 
+  const handleGoodCounter = () => {setGood(good +1)}
+
+  
+
   return (
     <div>
       <Header/>
-      <ButtonDisplay/>
-      <StatDisplay/>
+      <ButtonDisplay handleGoodCounter = {handleGoodCounter} />
+      <StatDisplay goodCount = {good}/>
     </div>
   )
 }
