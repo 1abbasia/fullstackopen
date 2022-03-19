@@ -30,15 +30,35 @@ const StatDisplay = (props) => {
     )
   }
   return (
-    <div>
-      <h1>Statistics</h1>
-      <div>goooood:{props.goodCount}</div>
-      <div>neutral:{props.neutralCount}</div>
-      <div>bad:{props.badCount}</div>
-      <div>all:{props.all}</div>
-      <div>average score:{props.avg}</div>
-      <div>Positive percentage:{props.posPercent}</div>
-    </div>
+      <div>
+        <table>
+          <tr>
+            <th>Good:</th>
+            <th>{props.goodCount}</th>
+          </tr>
+          <tr>
+            <th>Bad:</th>
+            <th>{props.badCount}</th>
+          </tr>
+          <tr>
+            <th>Neutral:</th>
+            <th>{props.neutralCount}</th>
+          </tr>
+          <tr>
+            <th>All</th>
+            <th>{props.all}</th>
+          </tr>
+          <tr>
+            <th>Average Score:</th>
+            <th>{props.avg}</th>
+          </tr>
+          <tr>
+            <th>Postive Average:</th>
+            <th>{props.posPercent}</th>
+          </tr>
+        </table>
+      </div>
+    
   )
 }
 
