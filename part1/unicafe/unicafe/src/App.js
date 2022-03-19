@@ -27,6 +27,9 @@ const StatDisplay = (props) => {
       <div>goooood:{props.goodCount}</div>
       <div>neutral:{props.neutralCount}</div>
       <div>bad:{props.badCount}</div>
+      <div>all:{props.allCount}</div>
+      <div>average score:{props.average}</div>
+      <div>Positive percentage:{props.posPercent}</div>
     </div>
   )
 }
@@ -56,4 +59,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App 
