@@ -21,6 +21,14 @@ const ButtonDisplay = (props) => {
 
 const StatDisplay = (props) => {
   //logic for stats section
+
+  //if/else statement to dtermine whether to render stats or message prompting user to click any button
+
+  if(props.all === 0){
+    return(
+     <div>No Feedback given</div> 
+    )
+  }
   return (
     <div>
       <h1>Statistics</h1>
