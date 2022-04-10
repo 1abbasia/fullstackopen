@@ -17,6 +17,7 @@ const Button = (props) => {
   return (
     <div>
       <button onClick={props.handleButtonClick}>Get another quote!</button>
+      <button onClick= {props.handleVoteClick}>Vote for this quote</button>
     </div>
   )
 }
@@ -36,9 +37,14 @@ const App = () => {
 
   console.log(anecdotes.length)
   console.log(selected);
+
   const handleButtonClick = () => {
-      setSelected(selected +1);
+      setSelected(Math.floor(Math.random()*7));
   }
+
+  // const handleVoteClick = () => {
+    
+  // }
 
   return (
     <div>
