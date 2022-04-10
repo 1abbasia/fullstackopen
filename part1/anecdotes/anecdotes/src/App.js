@@ -16,7 +16,7 @@ const Header = (props) => {
 const Button = (props) => {
   return (
     <div>
-      <button onClick={props.handleButtonClick}>Get random anecdote</button>
+      <button onClick={props.handleButtonClick}>Get another quote!</button>
     </div>
   )
 }
@@ -34,10 +34,16 @@ const App = () => {
 
   const [selected, setSelected] = useState(0);
 
+  console.log(anecdotes.length)
+  console.log(selected);
+  const handleButtonClick = () => {
+      setSelected(selected +1);
+  }
+
   return (
     <div>
       <Header />
-      <Button />
+      <Button handleButtonClick = {handleButtonClick}/>
       {anecdotes[selected]}
     </div>
   );
