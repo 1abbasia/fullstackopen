@@ -8,7 +8,15 @@ import { useState } from 'react'
 const Header = (props) => {
   return (
     <div>
-      <h1>Anecdotes</h1>
+      <h1>Anecdotes from software engineering</h1>
+    </div>
+  )
+}
+
+const Button = (props) => {
+  return (
+    <div>
+      <button onClick={props.handleButtonClick}>Get random anecdote</button>
     </div>
   )
 }
@@ -29,6 +37,7 @@ const App = () => {
   return (
     <div>
       <Header />
+      <Button />
       {anecdotes[selected]}
     </div>
   );
