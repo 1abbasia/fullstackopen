@@ -30,7 +30,7 @@ const App = () => {
     'Any fool can write code that a computer can understand. Good programmers write code that humans can understand.',
     'Premature optimization is the root of all evil.',
     'Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.',
-    'Programming without an extremely heavy use of console.log is same as if a doctor would refuse to use x-rays or blood tests when diagnosing patients'
+    'Programming without an extremely heavy use of console.log is same as if a doctor would refuse to use x-rays or blood tests when diagnosing patients', 'DeezNutz', "Live Laugh Love -Kim Jong Un"
   ]
 
   const [selected, setSelected] = useState(0);
@@ -40,7 +40,7 @@ const App = () => {
   console.log(selected);
 
   const handleButtonClick = () => {
-      setSelected(Math.floor(Math.random()*7));
+      setSelected(Math.floor(Math.random()*9));
   }
 
   const handleVoteClick = () => {
